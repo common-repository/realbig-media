@@ -1,0 +1,220 @@
+body {
+    line-height: 1.4;
+    position: relative;
+}
+
+body, html {
+    height: auto;
+}
+
+h1 span {
+    font-size: 0.6em;
+    position: relative;
+    top: -0.4em;
+}
+
+.rfwp_tabs {
+    display: flex;
+    margin: 45px 0 0;
+}
+
+.rfwp_tabs.no-top-margin {
+    margin-top: 0;
+}
+
+h2:last-child {
+    margin-bottom: 0;
+}
+
+h2:first-child {
+    margin-top: 0;
+}
+
+.rfwp_tabs li {
+    padding: 6px 10px 8px;
+    border: 1px solid #222;
+    border-bottom: none;
+    border-radius: 4px 4px 0 0;
+    background: #eee;
+    margin-bottom: -1px;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    transition: background-color 0.1s linear, z-index 0.1s linear;
+}
+
+@media (max-width: 767px) {
+    .rfwp_tabs {
+        flex-wrap: wrap;
+    }
+
+    .rfwp_tabs li {
+        border-bottom: 1px solid #222;
+    }
+
+}
+
+.rfwp_tabs li:hover, .rfwp_tabs li.active {
+    background: #fff;
+}
+
+.rfwp_tabs li.active {
+    z-index: 1;
+}
+
+.rfwp_tabs li:not(:first-child) {
+    margin-left: -1px;
+}
+
+.rfwp_white-blk {
+    background: #fff;
+    border: 1px solid #222;
+    padding: 15px;
+    position: relative;
+}
+
+.separated-blocks {
+    display: inline-table;
+    margin-right:10px;
+}
+.element-separator {
+    margin: 5px 0;
+}
+.element-separator.more {
+    margin: 10px 0;
+}
+.element-separator.most {
+    margin: 30px 0;
+}
+.element-separator:first-child {
+    margin-top: 0;
+}
+.element-separator:last-child {
+    margin-bottom: 0;
+}
+.squads-blocks {
+    border: 1px solid grey;
+    width: max-content;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.squads-blocks:first-child, .squads-blocks.no-margin {
+    margin-top: 0;
+}
+
+.o-lists {
+    margin: 5px 5px 5px 1em;
+}
+#folderRename {
+    background-color: #B1FFB0;
+}
+#rssTest {
+    background-color: #e8ff89;
+    /*color: #000000;*/
+}
+#ip-result {
+    color: green;
+    font-size: 20px;
+}
+
+p.submit {
+    padding: 0;
+}
+
+.width-whole {
+    width: 100%;
+}
+
+.ml-auto, .ml-auto p {
+    margin-left: auto;
+}
+.ml-auto p {
+    text-align: right;
+}
+
+/* table style */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table tr td, .table tr th {
+    border: 1px solid #000;
+    padding: 8px 5px;
+}
+
+.table thead, .table tbody {
+    border: 2px solid #000;
+}
+
+.pre-wrap {
+    white-space: pre-wrap;
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+/* accoudion style */
+.accordion-section {
+    border-bottom: 1px solid #dcdcde;
+}
+
+.accordion-section .accordion-section-title {
+    border-left: none;
+    border-right: none;
+    padding: 10px 10px 11px 14px;
+    line-height: 1.55;
+    background: #fff;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+    border-left: 1px solid #dcdcde;
+    border-right: 1px solid #dcdcde;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.accordion-section .accordion-section-title::after {
+    top: calc(50% - 10px);
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+    float: right;
+    content: "\f140";
+    font: normal 20px/1 dashicons;
+    speak: never;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none;
+    color: #787c82;
+}
+
+.accordion-section-content {
+    display: none;
+    padding: 10px 20px 15px;
+    background: #fff;
+    max-height: 350px;
+    overflow: auto;
+}
+
+.accordion-section .accordion-section-title:focus, .accordion-section .accordion-section-title:hover,
+.accordion-section.open .accordion-section-title, .accordion-section:hover .accordion-section-title,
+.no-js .accordion-section .accordion-section-title {
+    color: #1d2327;
+    background: #f6f7f7;
+}
+
+.accordion-section.open .accordion-section-title, .no-js .accordion-section .accordion-section-title {
+    border-bottom: 1px solid #dcdcde;
+}
+
+.accordion-section.open .accordion-section-title::after, .no-js .accordion-section .accordion-section-title::after {
+    content: "\f142";
+}
+
+.accordion-section.open .accordion-section-content, .no-js .accordion-section .accordion-section-content{
+    display: block;
+}
